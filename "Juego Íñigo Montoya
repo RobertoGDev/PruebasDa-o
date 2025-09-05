@@ -1,0 +1,119 @@
+import random
+
+nombres = [
+  'El Fafas',
+  'Chupapinga',
+  'Don Ciccio',
+  'El Putas',
+  'Supra Jordan',
+  'Joako',
+  'Sofonías',
+  'Rubén',
+  'Gustamante',
+  'Severino Pajas-Lefa',
+  'El guasas',
+  'La mala rodriguez cuando no era mala',
+  'Un pelotari con pelotas'
+  ]
+  
+padres = [
+  'Blauzafir',
+  'tu puta madre',
+  'un pepino',
+  'algún negrata desconocido',
+  'el dueño de Bimbo',
+  'Brabasalsar',
+  'Payaso Rodríguez',
+  'Manolo tetas de cóndor',
+  'Alfredo el duende del cuarto',
+  'Paquita y Fernando',
+  'Cruasán Maldito',
+  'Chupi el de los bocatas',
+  'Bobobó',
+  'el que te focka',
+  'San Juan Calamar',
+  'una ranita',
+  'Mr. Frost',
+  'Super Greg',
+  'Bigote Arrocet'
+  ]
+  
+acciones = [
+  'tú mataste a mi viejo',
+  'tú me tronchaste el muñequito',
+  'tú sodomizaste a mi abuelita',
+  'tú desencajaste mi mandíbula',
+  'tú rasuraste mi zipote',
+  'encontraste mi secreto sexual',
+  'tú insultaste a mi hermano travesti',
+  'te vi ayer meando en la pila bautismal durante la misa',
+  'tú comiste todo el rabo',
+  'me abandonaste en un puticlub con moho',
+  'cagaste en mi terraza',
+  'estrujaste mi palmerita de chocolate',
+  'insultaste a pepito'
+  ]
+  
+muertes = [
+  'con el culo reventado',
+  'ahogado en un tanque de mierda',
+  'follado por 7 papanatas',
+  'apuñalado con la montura de unas gafas de aluminio',
+  'envuelto en toallitas para el culo de bebé',
+  'balaseado por una machine-gun con balas de queso fresco',
+  'hasta las tetas de keta absurda'
+  ]
+  
+nombre = random.choice(nombres) 
+padre = random.choice(padres) 
+accion = random.choice(acciones)
+
+print(f'Hola soy ' + nombre + ', hijo de', padre + ', ' + accion + ', prepárate a morir...')
+
+if accion == 'encontraste mi secreto sexual' :
+  
+  print('''
+  
+                 (☞ ͡° ͜ʖ ͡°)☞                           
+     ''')                         
+  
+  print('\nMuy bien! Encontraste mi deseo sexual! \nHas ganado un bonus!!!\n')
+  input('\nPulsa "Enter"" para saber cómo morirás: \n')
+  muerte = random.choice(muertes)
+  print('Morirás ' + muerte)
+  
+  print('''
+  ⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣾⡿⠋⠀⠿⠇⠉⠻⣿⣄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⣿⠏⠀⠀⠀⠀⠀⠀⠀⠙⣿⣆⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢠⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣆⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⡄⠀⠀⠀⢀⣤⣀⠀⠀⠀⠀⣿⡿⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠻⣿⣶⣶⣾⡿⠟⢿⣷⣶⣶⣿⡟⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡏⠉⠁⠀⠀⠀⠀⠉⠉⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣸⣿⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⡇⢀⣴⣿⠇⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣠⣴⣿⣷⣿⠟⠁⠀⠀⠀⠀⠀⣿⣧⣄⡀⠀⠀⠀
+⠀⢀⣴⡿⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⢿⣷⣄⠀
+⢠⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣆
+⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿
+⣿⣇⠀⠀⠀⠀⠀⠀⢸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿
+⢹⣿⡄⠀⠀⠀⠀⠀⠀⢿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿
+⠀⠻⣿⣦⣀⠀⠀⠀⠀⠈⣿⣷⣄⡀⠀⠀⠀⠀⣀⣤⣾⡟⠁
+⠀⠀⠈⠛⠿⣿⣷⣶⣾⡿⠿⠛⠻⢿⣿⣶⣾⣿⠿⠛⠉⠀⠀
+  ''')
+  
+else :
+  
+  print('''
+                ╭∩╮( •̀_•́ )╭∩╮
+''')
+  print('''    ¡Sigue probando hasta conseguir el bonus!
+  
+                  - Game Over -
+  ''')
