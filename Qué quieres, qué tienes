@@ -1,0 +1,26 @@
+print('Estás en un bar y te acercas a la barra a pedir una copita, el camarero se acerca a ti mientras te dice: Buenas noches caballero... \n')
+
+respuesta = input('¿Qué quiere? \n\n\nOpciones de respuesta: \n\n1.Ponme un Red Label con cocacola \n2.No quiero nada, gracias\n\nRespuesta seleccionada:  ')
+
+bebida = [ 
+'un cacique con cocacola',
+'una ginebra con sprite',
+'una cerveza',
+'un calimotxo',
+'un puto vaso de agua',
+'lo que te salga de la polla']
+
+i = 0
+
+while respuesta == '1' and i < len(bebida):
+    respuesta = input(f'\n\n- No tengo, ¿qué quieres? \n\n- ¿Qué tienes?... \n\n- Lo que quieras, tengo de tó! \n\n\nOpciones de respuesta: \n\n1.Pues ponme {bebida[i]} \n2.No quiero nada, gracias\n\nRespuesta seleccionada:  ')
+    i = i+1
+    
+if i == 6:
+    print('\n\n- No tengo, ¿qué quieres? \n\n- Que te den por culo, me piro')
+
+elif respuesta == '2':
+    print('\n- Pues váyase a la mierda')
+    
+else:
+    print('selecciona "1" o "2"')
