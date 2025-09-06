@@ -12,8 +12,9 @@ nombres = [
   'Gustamante',
   'Severino Pajas-Lefa',
   'El guasas',
+  'Afroyoyo',
   'La mala rodriguez cuando no era mala',
-  'Un pelotari con pelotas'
+  'Un pelotari con pelotas de cuero negro'
   ]
   
 padres = [
@@ -35,7 +36,8 @@ padres = [
   'una ranita',
   'Mr. Frost',
   'Super Greg',
-  'Bigote Arrocet'
+  'Bigote Arrocet',
+  'Refrotín'
   ]
   
 acciones = [
