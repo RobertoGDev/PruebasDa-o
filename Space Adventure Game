@@ -1,0 +1,117 @@
+
+import random
+print(
+'''  
+     _       _                 _                     ____                      
+    / \   __| |_   _____ _ __ | |_ _   _ _ __ ___   / ___| __ _ _ __ ___   ___ 
+   / _ \ / _` \ \ / / _ \ '_ \| __| | | | '__/ _ \ | |  _ / _` | '_ ` _ \ / _ .
+  / ___ \ (_| |\ V /  __/ | | | |_| |_| | | |  __/ | |_| | (_| | | | | | |  __/
+ /_/   \_\__,_| \_/ \___|_| |_|\__|\__,_|_|  \___|  \____|\__,_|_| |_| |_|\___|
+''')
+
+print('Welcome to this space adventure role-playing game! Let\'s get started.\n')
+name = input('What do you want to call yourself: ')
+mate_name = input('What do you want your partner to be called? ')
+print(f'\nYou have just landed with your space crew on an unknown and seemingly deserted planet. You and your partner {mate_name} decide to put on your space suits and leave the ship to begin exploring...\n')
+print(f'As you step onto the surface of the planet, you notice the air is breathable and the landscape is filled with strange, colorful plants. What do you want to do next? \n(select an option: 1 or 2)\n')
+print(f'''
+        1. You and your partner {mate_name} remove your helmets.
+        2. You go to explore the plants to take a sample.\n''')
+respuesta = input('Selected answer: ')
+if respuesta == '1':
+    print(f'\nYou and your partner {mate_name} remove your helmets and take a deep breath of the fresh air. It feels good to be outside the ship! But suddenly, you hear a strange noise coming from the bushes nearby...')
+    print(f'Your partner runs towards you shouting... {name} quickly put your helmet back on, a sandstorm is fast approaching!!\n But it\'s too late, a little alien rat child has gnawed through the helmets and they are now unusable.\n')
+    respuesta=input('''What are you going to do now? (Select an option: 1 or 2)
+                    
+        1. Kick the rat kid and run back to the ship.
+        2. Grab the rat kid to try to save him despite him being a jerk and run to the ship. \n
+                     
+            Answer selected: ''')
+    if respuesta == '1':
+        print(f'You kick the rat kid and run back to the ship as fast as you can.\n')
+
+        tirada = input('Roll a die (1-6) to see if you make it back to the ship safely (press enter): ')
+        tirada1 = random.randint(1, 6)
+        print(f'You rolled a {tirada1}.\n')   
+
+        tirada = input('Roll a die (1-6) to see if your partner makes it back to the ship safely (press enter): ')
+        tirada2 = random.randint(1, 6)
+        print(f'You rolled a {tirada1}.\n')
+
+        tirada = input('\nRoll a die (1-6) to see if the rat kid lives or die: ')
+        tirada3 = random.randint(1, 6)
+        print(f'\nYou rolled a {tirada3}.\n')
+
+
+        if tirada1 >= 4 and tirada2 >= 4 and tirada3 >= 4:
+            print(f'\nCongratulations {name}! You and your partner {mate_name} made it back to the ship safely, but the rat kid did not survive. It was just what you wanted. Now you and your partner can return safely to your planet, although your boss will give you a hard time for losing such expensive helmets, and that dirty rat can rest in hell.\n\n - GAME OVER -')
+        elif tirada1 < 4 and tirada2 >= 4 and tirada3 >= 4:
+            print(f'\nSorry {name}, you did not make it back to the ship safely, but your partner {mate_name} did, and the rat kid did not survive. Your partner will have to explain to your boss what happened and that you lost such expensive helmets, and that dirty rat can rest in hell as you wanted, even though it cost you your life.\n\n - GAME OVER -')
+        elif tirada1 >= 4 and tirada2 < 4 and tirada3 >= 4:
+            print(f'\nSorry {name}, your partner {mate_name} did not make it back to the ship safely, but you did, and the rat kid did not survive. You will have to explain to your boss what happened and that you lost such expensive helmets,But since your partner died, you\'ll blame him. and that dirty rat can rest in hell as you wanted, even though it cost your partner their life.In life, you have to make sacrifices.\n\n - GAME OVER -')
+        elif tirada1 >= 4 and tirada2 >= 4 and tirada3 < 4:
+            print(f'\nCongratulations {name}! You and your partner {mate_name} made it back to the ship safely, but the rat kid survived. Even though your life is safe, I don\'t know if you\'ll be able to live knowing that dirty rat is still alive. Maybe you\'ll have to go back to that planet someday to eliminate him.In addition, you will have to explain to your boss what happened and that you lost such expensive helmets. \n\n - GAME OVER -')
+        elif tirada1 < 4 and tirada2 < 4 and tirada3 >= 4:
+            print(f'\nSorry {name}, neither you nor your partner {mate_name} made it back to the ship safely, but the rat kid did not survive. Your boss will be very upset that you lost such expensive helmets but the good thing is that you won\'t have to give explanations anymore. and that dirty rat can rest in hell as you wanted, even though it cost both of your lives for wasting time kicking her and not arriving at the ship on time.\n\n - GAME OVER -')
+        elif tirada1 < 4 and tirada2 >= 4 and tirada3 < 4:
+            print(f'\nSorry {name}, you did not make it back to the ship safely, but your partner {mate_name} did, and the rat kid survived. Your partner will have to explain to your boss what happened and that you lost such expensive helmets, and now that dirty rat is still alive. I don\'t know if your partner will be able to live with that, Your partner will probably return to that planet someday to eliminate her as revenge..\n\n - GAME OVER -') 
+        elif tirada1 >= 4 and tirada2 < 4 and tirada3 < 4:
+            print(f'\nSorry {name}, your partner {mate_name} did not make it back to the ship safely, but you did, and the rat kid survived. You will have to explain to your boss what happened and that you lost such expensive helmets,But since your partner died, you\'ll blame him. and now that dirty rat is still alive. I don\'t know if you\'ll be able to live with that, You will probably return to that planet someday to eliminate her as revenge. In life, you have to make sacrifices.\n\n - GAME OVER -')
+        elif tirada1 < 4 and tirada2 < 4 and tirada3 < 4:
+            print(f'\nSorry {name}, neither you nor your partner {mate_name} made it back to the ship safely, but the rat kid survived. Your boss will be very upset that you lost such expensive helmets but the good thing is that you won\'t have to give explanations anymore. On top of that, that damn rat kid is still alive, and because of him, you didn\'t make it to the ship on time. \n\n - GAME OVER -')     
+        else:
+            print('\nInvalid input. Please start over.\n\n - GAME OVER -')
+    if respuesta == '2':
+        print('''
+You just won the game with the highest score because saving a rat kid, even though he\'s a jerk, makes you a better person. The rat kid apologizes, saying, “Aooouhhh papu, you\'re pro, not noob, 100 percent real, not fake.”
+
+in addition you earned a bonus, but to get it, you have to correctly guess the PIN
+''')
+        pin = input('\nenter a tree number pin: ')
+        while pin != '222':
+            print('\nIncorrect PIN. Please try again.')
+            pin = input('\nenter a tree number pin: ')
+        print('\nCorrect PIN! You have You have won the prize:')
+        print('''
+              
+ ██████╗  █████╗ ██████╗ ██████╗  ██████╗ ████████╗███████╗
+██╔════╝ ██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝
+██║  ███╗███████║██████╔╝██████╔╝██║   ██║   ██║   █████╗  
+██║   ██║██╔══██║██╔══██╗██╔══██╗██║   ██║   ██║   ██╔══╝  
+╚██████╔╝██║  ██║██║  ██║██║  ██║╚██████╔╝   ██║   ███████╗
+ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝
+              \n\n - GAME OVER -''')
+
+elif respuesta == '2':
+    print(f'\nYou and your partner {mate_name} decide to explore the plants. You carefully take a sample of one of the colorful plants for further analysis. Suddenly, a giant alien with the face of Manolo, your neighbor from the fourth floor, appears from among the plants. He looks angry and shouts: Mamarrachooooo! You and your partner {mate_name} freeze in fear as Manolo approaches you. He seems to be upset about something, but you can\'t understand what he\'s saying. What do you want to do? (select an option: 1 or 2)\n')
+    respuesta = input('''
+            1. Try to communicate with Manolo and find out what\'s wrong with him.
+            2. Land a good punch on Manolo\'s face and run back to the ship.
+                      
+                    Answer selected: ''')
+    if respuesta == '1':
+        print(f'\nYou try to communicate with Manolo, but he doesn\'t seem to understand you. Suddenly, he grabs you and your partner {mate_name} and starts shaking you both violently\n')
+        tirada = input('Roll a die (1-6) to see if you and your partner make it back to the ship safely (press enter):\n ')
+        tirada1 = random.randint(1, 6)
+        print(f'\nYou rolled a {tirada1}.\n') 
+        if tirada1 >= 4:
+            print(f'\nCongratulations {name}! You and your partner {mate_name} made it back to the ship safely. You quickly leave the planet and head back to your home planet, grateful to have escaped Manolo\'s wrath. Your boss is relieved to see you both safe, and you vow to never explore an unknown planet without proper precautions again. Manolo was forever sad, trapped on his planet. He was actually a good guy and just wanted affection.\n\n - GAME OVER -.')
+        if tirada1 < 4:
+            print(f'\nSorry {name}, you and your partner {mate_name} did not make it back to the ship safely. Manolo was too strong, and despite your efforts to escape, he overpowered you both. Your boss is devastated by the loss of his crew members and vows to never send anyone on a mission without proper training and equipment again. Manolo continued to live on his planet, forever alone, sad and misunderstood for having killed his new little friends.\n\n - GAME OVER -')
+    if respuesta == '2':
+        tirada = input('\nRoll the first dice (1-6) to see how much damage you do to Manolo (Press enter)')
+        tirada1 = random.randint(1, 6)
+        print(f'\nYou rolled: {tirada1}\n')
+
+        tirada = input(f'Roll the second dice (1-6) to see to see if you and your friend {mate_name} arrive safely at the ship (Press enter)')
+        tirada2 = random.randint(1, 6)
+        print(f'\nYou rolled: {tirada2}\n')
+
+        if tirada1 >= 3 and tirada2 >= 3:
+            print(f'\nYou manage to punch Manolo hard and run fast enough to reach the ship safely. Manolo was left on that planet, sad and alone, in reality, he was just looking for affection. but at least you and your partner {mate_name} are safe. Now you can return to your planet, and your women will be proud of you forever.\n\n - GAME OVER -')
+        elif tirada1 < 3 and tirada2 >= 3:
+            print(f'\nYou try to punch Manolo, but he is too strong and overpowers you. However, you and your partner {mate_name} manage to scape and run fast enough to reach the ship safely. Manolo was left on that planet, sad and alone, in reality, he was just looking for affection. but at least you and your partner {mate_name} are safe. Now you can return to your planet, and your women will be proud of you forever.\n\n - GAME OVER -')
+        elif tirada1 >= 3 and tirada2 < 3: 
+            print(f'\nYou punch Manolo so hard that he\'s knocked out for a while. Meanwhile, you and your buddy {mate_name} make it back to the ship and head back to your planet. When Manolo wakes up, he\'s super sad to see that his two new friends have left him behind. \n\n - GAME OVER -')
+        else:
+            print(f'\nYou manage to punch Manolo hard, but Manolo overpowers you both and it destroys you both. Actually, Manolo was a nice guy who felt lonely on his planet and wanted to make friends, so now he feels bad. The rest of the crew, seeing that you weren\'t coming back, gave up on you and went to dinner on the next planet over.\n\n - GAME OVER -')
